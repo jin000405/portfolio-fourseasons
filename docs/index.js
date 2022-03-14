@@ -286,3 +286,7 @@ function SwiperBox2__init() {
 }
 
 SwiperBox2__init();
+$('body').imagesLoaded(function() {
+    $('.loading').remove();
+    AOS.init();
+  });
