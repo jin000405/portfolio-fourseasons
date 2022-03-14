@@ -7,6 +7,23 @@
 .con {
   width: 1920px;
 }
+/* 로딩 */
+.loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.loading::after {
+  content: "loding..";
+}
 .section-group {
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
